@@ -45,9 +45,8 @@ public class Main {
         var differeceBoxerWeight = oneBoxerWeight - secondBoxerWeight;
         System.out.println("разница в весе " + differeceBoxerWeight);
 
-        //так как разница в весе отрицательная то второй боксер весит больше первого,
-        //поэтому составляем перменную ниже
-        var endDifferenceWeight = (secondBoxerWeight - oneBoxerWeight) % allBoxerWeight;
+        //пределал, взял остаток деления большего числа на меньшее
+        var endDifferenceWeight = secondBoxerWeight / oneBoxerWeight;
         System.out.println("остаток деления " + endDifferenceWeight);
 
         var allWorkHours = 640;
