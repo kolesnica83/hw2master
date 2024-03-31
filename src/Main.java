@@ -45,8 +45,8 @@ public class Main {
         var differeceBoxerWeight = oneBoxerWeight - secondBoxerWeight;
         System.out.println("разница в весе " + differeceBoxerWeight);
 
-        //пределал, взял остаток деления большего числа на меньшее
-        var endDifferenceWeight = secondBoxerWeight / oneBoxerWeight;
+        //пределал, понял просто надо использовать знак % который и означает остаток деления
+        var endDifferenceWeight = secondBoxerWeight % oneBoxerWeight;
         System.out.println("остаток деления " + endDifferenceWeight);
 
         var allWorkHours = 640;
